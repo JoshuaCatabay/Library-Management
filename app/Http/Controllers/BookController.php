@@ -30,10 +30,10 @@ class BookController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
-            'author' => 'required',
+            'title'       => 'required',
+            'author'      => 'required',
             'description' => 'required',
-            'ISBN' => 'required',
+            'ISBN'        => 'required',
             'published_year' => 'required',
         ]);
         
